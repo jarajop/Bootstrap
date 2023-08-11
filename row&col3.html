@@ -10,10 +10,20 @@
 <body>
     
     <div class="container border">         <!--La classe border ajoute des bordures grises autour de l'élément-->
-        <div class="row">
-            <div class="col-6 bg-info">Espace de 6 colonnes</div>  <!-- ici si on fait la somme on depasse 12 colonnes donc le 3e element s'affiche  -->
+        <!-- <div class="row">
+            <div class="col-6 bg-info">Espace de 6 colonnes</div>  ici si on fait la somme on depasse 12 colonnes donc le 3e element s'affiche  
             <div class="col-4 bg-success">Espace de 4</div>
             <div class="col-8 bg-warning">Espace de 8</div>
+        </div> -->
+        <div class="row">
+            <div class="col-6 bg-success">Col de 6</div>
+            <div class="col-4 bg-warning">Col de 4</div>
+            <div class="bg-danger">Col non definie</div>  <!--ici on ne sait pas sn nombre de colonne mai vu k 12-10=2 il aura l'espace de 2 colonnes  -->
+        </div>
+        <div class="row">
+            <div class="bg-success">Col non definie</div>
+            <div class="col-6 bg-warning">Col de 6</div>   <!--cette ligne et la suivante on ne sait pas leur nombre de colonne mai vu k 12-6=6 diviser par 2 donnera 3 col a chacun -->
+            <div class="bg-danger">Col non defini aussi</div>
         </div>
     </div>
     
